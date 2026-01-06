@@ -22,21 +22,26 @@ class Program
             if(userNumber != 0)
             {
                 numbers.Add(userNumber);
-                sum += userNumber;
                 count += 1;
             }
 
-            if(userNumber > largestNum)
-            {
-                largestNum = userNumber;
-            }
-
-            if(userNumber > 0 && userNumber < smallestNum)
-            {
-                smallestNum = userNumber;
-            }
-
         } while(userNumber != 0);
+
+        // Loop through List to find largest and smallest number, and find the sum of all the numbers
+        foreach(int number in numbers)
+        {
+            if(number > largestNum)
+            {
+                largestNum = number;
+            }
+
+            if(number > 0 && number < smallestNum)
+            {
+                smallestNum = number;
+            }
+
+            sum += number;
+        }
 
         float average = ((float)sum) / count;
         Console.WriteLine($"The sum is: {sum}");
