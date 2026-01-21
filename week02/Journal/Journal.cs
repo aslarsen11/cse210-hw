@@ -6,7 +6,6 @@ public class Journal
 {
     // List of entries of user's input
     public List<Entry> _entries = new List<Entry>();
-    public Entry reorderEntry = new Entry();
 
     public void AddEntry(Entry newEntry)
     {
@@ -39,12 +38,13 @@ public class Journal
         using (StreamReader readFile = File.OpenText(file))
         {
             string line;
+            if(_entries.Count > 0)
+            {
+                _entries.Clear();
+            }
+
             while ((line = readFile.ReadLine()) != null)
             {
-                if(_entries.Count > 0)
-                {
-                    _entries.Clear();
-                }
                     string[] parts = line.Split("|");
 
                     // Place values into a new Entry

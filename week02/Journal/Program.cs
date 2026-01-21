@@ -8,7 +8,6 @@ class Program
     static void Main(string[] args)
     {
         Journal theJournal = new Journal();
-        //Entry anEntry = new Entry();
         PromptGenerator prompt = new PromptGenerator();
 
         // Getting the current date
