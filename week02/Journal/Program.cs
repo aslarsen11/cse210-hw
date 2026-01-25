@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 class Program
 {
@@ -83,7 +84,7 @@ class Program
                 Console.WriteLine("");
                 Console.WriteLine("     My Journal");
                 Console.WriteLine("");
-
+                
                 theJournal.DisplayAll();
             }
 
@@ -102,7 +103,11 @@ class Program
 
                 else
                 {
-                    Console.WriteLine("Sorry, that file can not be found. Please try again.");
+                    Console.WriteLine("Creating journal file...");
+                    FileStream temp = File.Create(fileName);
+                    temp.Close();
+
+                    theJournal.SaveToFile(fileName);
                 }
             }
 
