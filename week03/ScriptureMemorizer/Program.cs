@@ -78,7 +78,7 @@ class Program
             s[scriptureIndex].ShowAllWords();
             Console.WriteLine(s[scriptureIndex].GetDisplayText());
             Console.WriteLine("");
-            Console.WriteLine("Enter 'yes' to start memorizing the next scripure. Enter 'quit' to exit the program.");
+            Console.WriteLine("Enter 'yes' to start memorizing the next scripture. Enter 'quit' to exit the program.");
             continueMemorizing = Console.ReadLine();
             Console.WriteLine("");
 
@@ -86,7 +86,7 @@ class Program
                 scriptureIndex++;
 
         }
-        
+
         Console.WriteLine("");
         Console.WriteLine("Ending program...");
         Console.WriteLine("");

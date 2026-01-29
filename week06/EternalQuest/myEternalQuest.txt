@@ -1,0 +1,10 @@
+0
+SimpleGoal:First Simple Goal|1st simple goal|20|False
+EternalGoal:First Eternal Goal|1st eternal goal|15
+ChecklistGoal:First Checklist Goal|1st checklist goal|25|0|4|50
+EternalGoal:Second Simple Goal|2nd simple goal|150
+EternalGoal:Second Eternal Goal|2nd eternal goal|125
+ChecklistGoal:Second Checklist Goal|2nd checklist goal|200|0|12|400
+SimpleGoal:Third Simple Goal|3rd simple goal|300|False
+EternalGoal:Third Eternal Goal|3rd eternal goal|350
+ChecklistGoal:Third Checklist Goal|3rd checklist goal|400|0|12|550
