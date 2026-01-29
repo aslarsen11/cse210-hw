@@ -143,11 +143,6 @@ class Program
         Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine("");
         Console.WriteLine("------------------------------------------------------------------");
-        Console.WriteLine("");       
-
-        // For each order, the program calculates and displays the total cost. The program also calls methods to get packing and shipping labels and displays the results of these labels containing all required information.
-
-
-        // Make sure that all getters, setters, and constructors are created as needed.
+        Console.WriteLine("");
     }
 }
