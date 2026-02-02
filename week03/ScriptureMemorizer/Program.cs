@@ -13,6 +13,7 @@ class Program
         int wordsToHide = 3;
         int scriptureIndex = 0;
         string file = "myScriptures.txt";
+        // Getting all the data from the text file.
         string[] lines = System.IO.File.ReadAllLines(file);
         
         // List of the scriptures in the myScriptures file.
