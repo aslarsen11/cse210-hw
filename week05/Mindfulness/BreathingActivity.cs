@@ -2,7 +2,8 @@ using System;
 
 public class BreathingActivity : Activity
 {
-    public BreathingActivity() // Constructor
+    // Constructor
+    public BreathingActivity()
     {
         _name = "Breathing";
         _description = "This activity will help you relax by pacing your breathing. Breathe in and out slowly. Clear your mind and focus on the air going in, and going out.";

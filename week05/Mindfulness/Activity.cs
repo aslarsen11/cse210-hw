@@ -2,11 +2,8 @@ using System;
 
 public class Activity
 {
-    // The name of the activity
     protected string _name = "";
-    // The description of the activity
     protected string _description = "";
-    // The duration of time the user wants the activity to be
     protected int _duration = 0;
 
     protected DateTime _startTime;

@@ -58,6 +58,7 @@ class Program
 
             else
             {
+                // User input is invalid
                 Console.WriteLine("");
                 Console.WriteLine("Sorry, that is not one of the Menu options. Please select again.");
                 Console.WriteLine("");
