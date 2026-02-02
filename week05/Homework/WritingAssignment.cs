@@ -11,6 +11,7 @@ public class WritingAssignment : Assignment
     }
     public string GetWritingInformation()
     {
+        // Returns the inherited variables that have been set in the WritingAssignment constructor
         return $"{_title} by {_studentName}";
     }
 }

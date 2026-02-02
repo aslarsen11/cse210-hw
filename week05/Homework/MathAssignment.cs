@@ -14,6 +14,7 @@ public class MathAssignment : Assignment
 
     public string GetHomeworkList()
     {
+        // Returns the inherited variables that have been set in the MathAssignment constructor
         return $"Section {_textbookSection} Problems {_problems}";
     }
 }

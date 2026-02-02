@@ -7,6 +7,7 @@ class Program
         // The base class object
         Assignment assignment = new Assignment("Samuel Bennett", "Multiplication");
 
+        // variable gets overwritten every time GetSummary method is called. 
         string studentAndTopic = assignment.GetSummary();
 
         Console.WriteLine("");
