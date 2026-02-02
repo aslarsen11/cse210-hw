@@ -1,3 +1,5 @@
+// For studying polymorphism - Code written by Brother Burton in the BYU CSE 210 instructions
+
 using System;
 
 public class SalaryEmployee : Employee
