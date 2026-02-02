@@ -17,6 +17,7 @@ public class PromptGenerator
         bool isDuplicatePrompt = false;
         int promptIndex = randomGenerator.Next(0, length);
         
+        // Check if all the prompts have been used.
         if(endOfList == length)
         {
             indexes.Clear();
