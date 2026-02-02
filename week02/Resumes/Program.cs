@@ -25,6 +25,7 @@ class Program
 
         // for the object userResume, is 1 variable, and _jobs is a List that is created in the Resume.cs file
         userResume._name = "Christian Wolff";
+        
         // Add is a built-in method to add elements to the _jobs list
         userResume._jobs.Add(job1);
         userResume._jobs.Add(job2);
