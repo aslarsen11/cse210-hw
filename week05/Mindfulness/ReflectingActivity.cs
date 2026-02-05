@@ -14,7 +14,7 @@ public class ReflectingActivity : Activity
     private string _promptText = "";
     private int _showSpinner = 15;
 
-    private Random randomGenerator = new Random();
+    private Random _randomGenerator = new Random();
 
     // Constructor
     public ReflectingActivity()
@@ -62,7 +62,7 @@ public class ReflectingActivity : Activity
     public string GetRandomPrompt()
     {
         _length = _prompts.Count;
-        int promptIndex = randomGenerator.Next(0, _length);
+        int promptIndex = _randomGenerator.Next(0, _length);
 
         string _promptText = _prompts[promptIndex];
         return _promptText;
@@ -71,7 +71,7 @@ public class ReflectingActivity : Activity
     public string GetRandomQuestion()
     {
         _length = _questions.Count;
-        int questionIndex = randomGenerator.Next(0, _length);
+        int questionIndex = _randomGenerator.Next(0, _length);
         bool isDuplicateQuestion = false;
 
         if(_endOfQuestionList == _length)
@@ -88,7 +88,7 @@ public class ReflectingActivity : Activity
                 if(_questionIndexes.Contains(questionIndex))
                 {
                     isDuplicateQuestion = true;
-                    questionIndex = randomGenerator.Next(0, _length);
+                    questionIndex = _randomGenerator.Next(0, _length);
                 }
                 
                 else

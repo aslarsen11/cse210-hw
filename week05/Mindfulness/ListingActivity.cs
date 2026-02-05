@@ -3,7 +3,6 @@ using System;
 public class ListingActivity : Activity
 {
     private List<string> _prompts = new List<string>();
-    private Random randomGenerator = new Random();
 
     // Constructor
     public ListingActivity() 
@@ -22,23 +21,33 @@ public class ListingActivity : Activity
     public void Run()
     {
         Console.WriteLine("List as many responses you can to the following prompt:");
+        
         string promptText = GetRandomPrompt();
+        
         Console.WriteLine($"--- {promptText} ---");
         Console.Write("You may begin in: ");
+        
         ShowCountDown(5);
+        
         Console.WriteLine("");
+
         List<string> userList = new List<string>(GetListFromUser());
+        
         int entries = userList.Count;
+        
         Console.WriteLine($"You listed {entries} items!");
     }
 
     public string GetRandomPrompt()
     {
+        Random randomGenerator = new Random();
+
         int length = 0;
         length = _prompts.Count;
         int promptIndex = randomGenerator.Next(0, length);
 
         string promptText = _prompts[promptIndex];
+        
         return promptText;
     }
 

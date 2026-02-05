@@ -20,7 +20,7 @@ public class Activity
         Console.WriteLine("");
 
         do {
-            Console.Write("How much time, in seconds, would you like for your session?  ");
+            Console.Write("How much time, in seconds, would you like for your session? ");
             try
             {
                 _duration = int.Parse(Console.ReadLine());

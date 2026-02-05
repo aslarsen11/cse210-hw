@@ -11,25 +11,25 @@ public class BreathingActivity : Activity
 
     public void Run()
     {
-        int countdown = 0;
+        int countDown = 0;
         _startTime = DateTime.Now;
         DateTime endTime = _startTime.AddSeconds(_duration);
 
         // Loops for the number of seconds the user specified for the duration
         while (DateTime.Now <= endTime)
         {
-            if(countdown < 6)
+            if(countDown < 6)
             {
-                countdown = countdown + 2;
+                countDown = countDown + 2;
             }
 
             Console.WriteLine("");
             Console.Write("Breathe in... ");
-            ShowCountDown(countdown);
+            ShowCountDown(countDown);
             Console.Write("\n");
 
             Console.Write("Now breathe out... ");
-            ShowCountDown(countdown);
+            ShowCountDown(countDown);
             Console.WriteLine("");
         }        
     }
